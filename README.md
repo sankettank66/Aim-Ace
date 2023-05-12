@@ -1,17 +1,19 @@
 # Aim-Ace
 A website that creates and tracks personalized study plans for students, with features like flashcard creation and progress tracking and notify based on it.
 
+## View This Project On 
+https://devfolio.co/projects/aimace-b46f
 ## Prerequisites
 
 Before you begin, make sure you have the following installed on your machine:
 
-- [Node.js](https://nodejs.org) (version X.X.X)
-- [MongoDB](https://www.mongodb.com) (version X.X.X)
+- [Node.js](https://nodejs.org) (version 18.16.0)
+- [MongoDB](https://www.mongodb.com) (version 6.0)
 
 ## Installation
 
 1. Clone the repository to your local machine using the following command:
-git clone https://github.com/username/project.git
+git clone (https://github.com/sankettank66/Aim-Ace.git)
 
 2. Navigate to the project directory:cd project
 
