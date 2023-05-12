@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fedback.css">
+</head>
+
+<body>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <section class="full" id="blur">
+        <div class="header">
+            <h2 class="logo">AimAce</h2>
+            <i class="fa fa-bars x2" onclick="menuToggle()"></i>
+            <ul id="nevigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tskcard.html">Task</a></li>
+                <li><a href="feedback.html" target="_self" class="active">Feedback</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="Login.html">Login/Signup</a></li>
+                <i class="fa fa-times x2" onclick="menuToggle()"></i>
+            </ul>
+        </div>
+    </section>
+    <div class="element2"></div>    
+    <h1>Feedback Form</h1>
+    <div class="header2">
+    <form class="cf">
+        <div class="half">
+            <p>Name
+            <input type="text" id="input-name" placeholder="Name"></p>
+            <p>Email
+            <input type="email" id="input-email" placeholder="Email address"></p>
+            <p>Subject
+            <input type="text" id="input-subject" placeholder="Subject"></p>
+            <p>Feedback
+            <textarea name="message" type="text" id="input-message" rows="8" placeholder="Message"></textarea></p>
+            <input type="submit" value="Submit" id="input-submit">
+        </div>
+        
+    </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">z
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="task_animation.css">
+</head>
+<body>
+        <body>
+		<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+		<div class="full" id="blur">
+			<div class="header">
+				<h2 class="logo">AimAce</h2>
+				<i class="fa fa-bars x2" onclick="menuToggle()"></i>
+				<ul id="nevigation">
+					<li><a href="home.html">Home</a></li>
+                    <li><a href="task_index.html"class = "active" target="_self" >Task</a></li>   
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="Login.html">Login/Signup</a></li>
+					<i class="fa fa-times x2" onclick="menuToggle()"></i>
+				</ul>
+			</div>
+			<!-- <div class="bannerText" >
+				<h2> Navigate with AimAce to what's next! </h2><br>
+				<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore quos dolorem, atque nisi delectus veritatis quis, repudiandae tempora neque quaerat suscipit! Aperiam laudantium atque earum maiores tenetur vitae suscipit.</h3>
+				<a href="#" onclick="blurToggle()">Create your path</a>
+			</div> -->
+            <div id="cards">
+                <div class="Add_container">
+                    <p><a href="#" onclick="blurToggle()">Create your path</a></p>
+                </div>
+				
+            </div>
+			
+			<div class="element2"></div>
+		</div>
+		<div class="box" id="popup">
+			<form id="myform">
+				<h2>Card Details</h2>
+				<div class="inputBox">
+					<p>title<input type="text" name="title" id="title">
+					</p>
+				</div>
+				<div class="inputBox">
+					<p>Description(if any)
+					<textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+				</p>
+				</div>
+				
+				<button type="submit" onclick="blurToggle()">Make Your Card</button>
+			</form>
+		</div>
+		<div id="content_container" class="content_container"></div>
+		<script type="text/javascript">
+			function menuToggle() {
+				var element = document.getElementById("nevigation");
+				element.classList.toggle("show");
+			}
+			function blurToggle(){
+				var blur = document.getElementById('blur');
+				blur.classList.toggle('active');
+				var popup = document.getElementById('popup');
+				popup.classList.toggle('active');
+			}
+		</script>
+		<script src="task_js.js"></script>
+	</body>
+</html>

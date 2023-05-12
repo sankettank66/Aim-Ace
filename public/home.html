@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+        <body>
+		<div class="open">
+			<div class="layer"></div>
+			<div class="layer"></div>
+		</div>
+		<section>
+			<div class="header">
+				<h2 class="logo">AimAce</h2>
+				<i class="fa fa-bars x2" onclick="menuToggle()"></i>
+				<ul id="nevigation">
+					<li><a href="#home" class="active">Home</a></li>
+                    <li><a href="tskcard.html">Task</a></li>   
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="Login.html">Login/Signup</a></li>
+					<i class="fa fa-times x2" onclick="menuToggle()"></i>
+				</ul>
+			</div>
+			<div class="bannerText">
+				<h2>Empower Your Learning </h2><br>
+				<h3>With Customized Study Plans and Goal Tracking</h3>
+				<p>Welcome to our student progress tracking service! Here, parents and teachers can track the progress of their students and ensure that they are making the most of their educational opportunities. With our easy-to-use dashboard, you can monitor your student's performance in real-time and make sure that they are staying on the right path. Our system allows you to customize your tracking settings so that you can focus on the areas that are most important to you. From grades to attendance, we have you covered. So let's get started on tracking your student's progress today!</p>
+				<!-- <a href="#">Read More</a> -->
+			</div>
+			<img src="bulb.png" class="bulb" alt="Bulb-Image">
+			<div class="element1"></div>
+			<div class="element2"></div>
+		</section>
+		<script type="text/javascript">
+			function menuToggle() {
+				var element = document.getElementById("nevigation");
+				element.classList.toggle("show");
+			}
+		</script>
+	</body>
+</html>

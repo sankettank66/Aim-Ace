@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="signup_style.css">
+</head>
+<body>
+	<div class="box">
+		<form autocomplete="off" action="/signup" method="POST">
+			<h2>Sign Up</h2>
+            <div class="inputBox">
+				<input name="name" id="name" type="text" required="required">
+				<span>Username</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input name="email" id="email" type="email" required="required">
+				<span>Email</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input name="password" id="password" type="password" required="required">
+				<span>Password</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+				<input type="password" required="required">
+				<span>Confirm Password</span>
+				<i></i>
+			</div>
+			<input type="submit" value="Create Account">
+		</form>
+	</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="signup_style.css">
+</head>
+<body>
+	<div class="box">
+		<form autocomplete="off" action="/signup" method="POST" onsubmit="return validateForm()">
+			<h2>Sign Up</h2>
+            <div class="inputBox">
+				<input type="text" name="username" id="username" required="required">
+				<span>Username</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="email" name="email" id="email" required="required">
+				<span>Email</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" name="password" id="password" required="required">
+				<span>Password</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+				<input type="password" name="conf_password" id="conf_password" required="required">
+				<span>Confirm Password</span>
+				<i></i>
+			</div>
+			<input type="submit" value="Create Account">
+		</form>
+	</div>
+	<script type="text/javascript">
+		function validateForm(){
+		var pswd= document.getElementById('password').value;
+		var conf_pswd = document.getElementById('conf_password').value;
+
+		if(pswd != conf_pswd){
+			alert("Enter valid Confirm Password");
+			return false;
+		}
+	}
+	</script>
+</body>
+</html>
